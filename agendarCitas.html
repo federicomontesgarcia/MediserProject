@@ -7,8 +7,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="css/styles2.css">
+  	<link rel="stylesheet" href="r/css/main.css">
   	<link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    
+    <script src="js/bootstrap-datetimepicker.min.js"></script>
 
     <title>Mediser</title>
   </head>
@@ -33,12 +35,97 @@
     	<h1 class="text-center text-black">Agendar Citas</h1>
     	<h6 class="text-center text-black">Mediser, software especializado para el agendamiento de citas.</h6>
   	 </div>
+     
+    
+  <div class="container">
+    <h1>Ingresar Datos</h1>
+    <div class="row">
+      <div class="col order-first">
+        <label for="nombre">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+      </div>
+      <div class="col">
+        <label for="primer apellido">Primer Apellido</label>
+        <input type="text" class="form-control" id="primer apellido" placeholder="Ingrese su primer apellido">
+      </div>
+      <div class="col order-last">
+        <label for="segundo apellido">Ssegundo Apellido</label>
+        <input type="text" class="form-control" id="segundo apellido" placeholder="Ingrese su segundo apellido">
+      </div> 
+    </div>
+    <div class="row">
+      <div class="col order-first">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" placeholder="Ingrese su email">
+      </div>
+      <div class="col">
+        <label for="telefono">Teléfono</label>
+        <input type="text" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
+      </div>
+      <div class="col order-last">
+        <label for="celular">Celular</label>
+        <input type="text" class="form-control" id="celular" placeholder="Ingrese su Númro de Celular">
+      </div> 
+    </div>
+    <div class="row">
+    <div class="form-group col-sm-9">
+      <div class="col order-first">
+        <label for="direccion">Dirección</label>
+          <input type="text" class="form-control" id="dirección" placeholder="Ingrese su dirección">
+        </div>
+      </div>
+      <div class="col order-last">
+          <label for="ciudad">Ciudad</label>
+            <select id="ciudad" class="form-control">
+              <option selected>Bogotá</option>
+              <option>Medellín</option>
+              <option>Cali</option>
+              <option>Barranquilla</option>
+              <option>Bucaramanga</option>
+              <option>Pereira</option>
+              <option>Armenia</option>
+              <option>Cúcuta</option>
+            </select>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+                </div>
+            </div>
+          </div>
+          <script type="text/javascript">
+            $(function () {
+              $('#datetimepicker1').datetimepicker();
+            });
+          </script>  
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="comentario">Comentario</label>
+      <textarea id="comentario" class="form-control" rows="5"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
   </div>
+
+
+    
+
+  
   
     <!-- Option 1: Bootstrap Bundle with Popper -->
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/popper.js/dist/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  
    
   </body>
 </html>
