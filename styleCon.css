@@ -1,0 +1,45 @@
+.imageFondo{ display: flex;
+             justify-content: center;
+             align-items: center;
+  }
+
+
+
+#fondo { width: 1400px;
+         height: 900px;
+         background-image: url(images/consultar.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         border: 1px black solid;}
+
+.container{
+    text-align: initial;
+}
+
+
+.btn-animado{
+    display: inline-block;
+    padding: 14px 25px;
+    border-radius: 9px;
+    box-shadow: 0 0 12px 1px  rgba(0, 0, 0, .15);
+    background-color: #fff;
+    border: 1px solid #2CA880;
+    transition: all ease-in  150ms;  
+
+}
+
+.btn-animado img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem;
+    transform: scale(1.5);
+    width: 20px;
+    height: 20px;
+
+}
+
+.btn-animado:hover {
+    background-color: #139099;
+    color: #fff;
+
+}
