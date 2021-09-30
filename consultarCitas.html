@@ -1,24 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="css/styles2.css">
-  	<link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Mediser</title>
-  </head>
-  <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top"
-    <a class="navbar-brand" href="#"><span class="oi oi-book"></span>- Mediser -</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles2.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styleCon.css">
+
+  <title>Mediser</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" <a class="navbar-brand" href="#"><span
+      class="oi oi-book"></span>- Mediser -</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> 
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
@@ -28,17 +32,90 @@
     </div>
   </nav>
   <div class="jumbotron">
-     <div class="container">
-	 	<h1 class="text-center text-black">--------</h1>
-    	<h1 class="text-center text-black">Consultar Citas</h1>
-    	<h6 class="text-center text-black">Mediser, software especializado para el agendamiento de citas.</h6>
-  	 </div>
+    <div class="container"></div>
+      <h1 class="text-center text-black">--------</h1>
+      <h1 class="text">Consultar Citas</h1>
+      <!--<h6 class="text-center text-black"></h6> -->
+    </div>
+  </div>
+
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!--agrregar imagen -->
+  <div class= "colorFondo">
+    <div id="colorFondo1" class="colorFondo">
+  </div>
+  </div>
+
+    
+  <div class="imageFondo">
+    <div id="fondo" class="imageFondo">
+
+      <div class="container">
+        <h1>Ingresar Datos</h1>
+        <!--<div class="row"> -->
+        <!--<div class="col order-first"> -->
+        <label for="nombre">Ingresa tu número de cedula</label>
+        <input type="text" class="form-control" id="cedula">
+        <button type="button" class="btn-animado">
+          <img src="images/iconoconsulta.png">
+          <span class="text-icono">
+            Consultar
+          </span>
+        <!--<i class="far fa-clipboard"></i>-->
+        </button>
+      </div>
+      <!--<div class="imagenAl text-center">-->
+      <!--<img src="images/consultar.jpg" alt="contenido" width="1400" height="700"> -->
+    </div>
+  </div>
+  <div class="container mt-5 border">
+    <div class="row">
+      <div class="container w-25 text-left mt-5">
+        <h5 class="text-left text-black"></h5>
+        <h6 class="text-left text-black">
+        <ul>
+          <ol>Quienes Somos</ol>
+          <ol>Contacto</ol>
+          <ol>Terminos y condiciones</ol>
+        </ul>
+        </h6>
+      </div>
+      <div class="container w-25 text-left mt-5">
+        <h5 class="text-left text-black"></h5>
+        <h6 class="text-left text-black">
+        <ul>
+          <ol>Especialistas</ol>
+          <ol>Clinicas</ol>
+          <ol>Pregunta al experto</ol>
+          <ol>Medicamentos</ol>
+          <ol>Servicios</ol>
+          <ol>Preguntas Frecuentes</ol>
+        </ul>
+        </h6>
+      </div>
+      <div class="container w-25 text-left mt-5">
+          <h5 class="text-left text-black"></h5>
+          <h6 class="text-left text-black">
+          <ul>
+            <ol>Para especialistas</ol>
+            <ol>Planes y precios</ol>
+            <ol>Guías para profesionales</ol>
+            <ol>Widget para su web</ol>
+          </ul></h6>
+      </div>
+      <div class="container w-25 text-center">
+          <img src="images/doctormediser.png" alt="contenido1" class="text-left" width="100" height="100">
+          <br><img src="images/logn.png" alt="contenido1" class="text-left" width="200" height="50">
+          <h6 class="text-center text-black">Un servicio integral para tu  salud</h6>
+      </div>
+    </div>
   </div>
   
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/popper.js/dist/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-   
-  </body>
+</body>
+
 </html>
