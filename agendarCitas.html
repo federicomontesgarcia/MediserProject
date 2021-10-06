@@ -1,131 +1,103 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title> AGENDA CITAS</title>
+</head>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="r/css/main.css">
-  	<link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-    
-    <script src="js/bootstrap-datetimepicker.min.js"></script>
-
-    <title>Mediser</title>
-  </head>
-  <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top"
-    <a class="navbar-brand" href="#"><span class="oi oi-book"></span>- Mediser -</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> 
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
-        <li class="nav-item-active"><a class="nav-link" href="#">Agendar Citas</a></li>
-        <li class="nav-item"><a class="nav-link" href="./consultarcitas.html">Consultar Citas</a></li>
-      </ul>
-    </div>
-  </nav>
-  <div class="jumbotron">
-     <div class="container">
-	 	<h1 class="text-center text-black">--------</h1>
-    	<h1 class="text-center text-black">Agendar Citas</h1>
-    	<h6 class="text-center text-black">Mediser, software especializado para el agendamiento de citas.</h6>
-  	 </div>
-     
-    
-  <div class="container">
-    <h1>Ingresar Datos</h1>
-    <div class="row">
-      <div class="col order-first">
-        <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
-      </div>
-      <div class="col">
-        <label for="primer apellido">Primer Apellido</label>
-        <input type="text" class="form-control" id="primer apellido" placeholder="Ingrese su primer apellido">
-      </div>
-      <div class="col order-last">
-        <label for="segundo apellido">Ssegundo Apellido</label>
-        <input type="text" class="form-control" id="segundo apellido" placeholder="Ingrese su segundo apellido">
-      </div> 
-    </div>
-    <div class="row">
-      <div class="col order-first">
-        <label for="email">Email</label>
-        <input type="text" class="form-control" id="email" placeholder="Ingrese su email">
-      </div>
-      <div class="col">
-        <label for="telefono">Teléfono</label>
-        <input type="text" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
-      </div>
-      <div class="col order-last">
-        <label for="celular">Celular</label>
-        <input type="text" class="form-control" id="celular" placeholder="Ingrese su Númro de Celular">
-      </div> 
-    </div>
-    <div class="row">
-    <div class="form-group col-sm-9">
-      <div class="col order-first">
-        <label for="direccion">Dirección</label>
-          <input type="text" class="form-control" id="dirección" placeholder="Ingrese su dirección">
+<body class="antialiased bg-gray-100 ">
+  <div class="continer">
+    <div class="grid grid-cols-10 bg-green-700  ">
+        <div class="col-span-6"> 
+            <a href="#">
+                <img src="./images/logb.png" alt="" class="h-10 m-4">
+            </a>
         </div>
-      </div>
-      <div class="col order-last">
-          <label for="ciudad">Ciudad</label>
-            <select id="ciudad" class="form-control">
-              <option selected>Bogotá</option>
-              <option>Medellín</option>
-              <option>Cali</option>
-              <option>Barranquilla</option>
-              <option>Bucaramanga</option>
-              <option>Pereira</option>
-              <option>Armenia</option>
-              <option>Cúcuta</option>
-            </select>
-      </div>
+        <div class="mt-4 text-center"> <a class="text-white hover:bg-green-500  p-2 rounded" href="./index.html"> Inicio </a></div>
+        <div class="mt-4 text-center"> <a class="text-white hover:bg-green-500  p-2 rounded" href="./agendarCitas.html"> Agendar cita </a></div>
+        <div class="mt-4 text-center"> <a class="text-white hover:bg-green-500  p-2 rounded" href="./nosotros.html"> Nosotros </a></div>
+        <div class="mt-4 text-center"> <a class="text-white hover:bg-green-500  p-2 rounded" href="./consultarCitas.html"> Consultar cita </a></div>
+        
     </div>
-    <div class="container">
-      <div class="row">
-          <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                  <input type='text' class="form-control" />
-                  <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-calendar"></span>
-                  </span>
+
+    <div class="flex w-full min-h-screen justify-center items-center">
+        <div class=" flex flex-col md:flex-row md:space-x-6 space-y-6 md:space-y-0 bg-green-700 bg-opacity-75	 mt-10 mb-10 w-full max-w-5xl p-8 sm:p-12 rounded-xl shadow-lg text-white overflow-hidden">
+            <div class="flex-col space-y-8 justify-between">
+              <div>
+                <h1 class="font-bold text-4xl tracking-wide">
+                  Agenda tu cita
+                </h1>
+                <p class="pt-2 text-green-300 text-xl">
+                  Desde la comodidad de tu casa solo tienes que consultar los servicios y horarios disponibles
+                </p>
+              </div>
+              <div class="flex flex-col space-y-6">
+                <div class="inline-flex space-x-2 items-center mt-20">
+                  <ion-icon name="call" class="text-green-300 text-2xl"></ion-icon>
+                  <span>+(123) 456 7890</span>
                 </div>
+                <div class="inline-flex space-x-2 items-center">
+                  <ion-icon name="mail" class="text-green-300 text-2xl"></ion-icon>
+                  <span>mediser@correo.com</span>
+                </div>
+                <div class="inline-flex space-x-2 items-center">
+                  <ion-icon name="location" class="text-green-300 text-2xl"></ion-icon>
+                  <span> Calle 123 Av abc fg</span>
+                </div>
+              </div>
+              <div class="flex space-x-4 text-lg fa-3x ">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </div>           
             </div>
-          </div>
-          <script type="text/javascript">
-            $(function () {
-              $('#datetimepicker1').datetimepicker();
-            });
-          </script>  
-      </div>
+            <div class="relative">
+              <div class="absolute z-0 w-40 h-40 bg-green-300 rounded-full -right-28 -top-28"></div>
+              <div class="absolute z-0 w-40 h-40 bg-green-300 rounded-full -left-28 -bottom-16"></div>
+            <div class="relative z-10 bg-white rounded-xl shadow-lg p-8 text-gray-600 md:w-80">
+              <form action="" class="flex flex-col space-y-4">
+                <div>
+                  <label for="" class="text-sm">Nombres</label>
+                  <input type="text" placeholder="Digite su nombre" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus\:ring-2 focus:ring-green-300">
+                </div>
+                <div>
+                  <label for="" class="text-sm">Apellido</label>
+                  <input type="text" placeholder="Digite su apellido" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus\:ring-2 focus:ring-green-300">
+                </div>
+                <div>
+                  <label for="" class="text-sm">E-mail</label>
+                  <input type="text" placeholder="Digite su e-mail" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus\:ring-2 focus:ring-green-300">
+                </div>
+                <div>
+                  <label for="" class="text-sm">Celular</label>
+                  <input type="text" placeholder="Numero de celular" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus\:ring-2 focus:ring-green-300">
+                </div>
+                <div>
+                  <label for="" class="text-sm">Direccion</label>
+                  <input type="text" placeholder="Digite su direccion" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus\:ring-2 focus:ring-green-300">
+                </div>
+                <div>
+                  <label for="" class="text-sm">Comentario</label>
+                  <textarea 
+                  placeholder="Escribenos aqui" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus\:ring-2 focus:ring-green-300">
+                  </textarea>
+                </div>
+                <button class="inline-block self-end bg-green-700 text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Enviar</button>
+              </form>
+              
+
+            </div>
+        </div>    
     </div>
-    <div class="form-group">
-      <label for="comentario">Comentario</label>
-      <textarea id="comentario" class="form-control" rows="5"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-
-  </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
 
-    
-
-  
-  
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/popper.js/dist/popper.min.js"></script>
-	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  
-   
-  </body>
+</body>
 </html>
