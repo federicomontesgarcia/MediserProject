@@ -2,10 +2,10 @@
   "name": "mediserproject",
   "version": "1.0.0",
   "description": "software de salud",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
-    "dev": "lite-server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -17,13 +17,16 @@
     "url": "https://github.com/federicomontesgarcia/MediserProject/issues"
   },
   "homepage": "https://github.com/federicomontesgarcia/MediserProject#readme",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
-  },
+  "devDependencies": {},
   "dependencies": {
+    "body-parser": "^1.19.0",
     "bootstrap": "^5.1.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
+    "mongoose": "^6.0.9",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.13",
     "popper.js": "^1.16.1"
   }
 }

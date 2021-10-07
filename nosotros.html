@@ -13,15 +13,16 @@
     <title>Mediser</title>
   </head>
   <body>
-  <nav class="navbar navbar-expand-md navbar-dark bg-success fixed-top"
-    <a class="navbar-brand" href="#"><span class="oi oi-book"></span>- Mediser -</a>
+  <div class="container-fluid">   <!-- prueba div inicio y fin todo el body-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark  fixed-top"
+    <a class="navbar-brand" href="index.html"><span class="oi oi-book"></span> <img class="text-fluid" src="images/logb.png" alt="logoMediser" width="200" height="50"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"> 
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
-        <li class="nav-item-active"><a class="nav-link" href="#">Nosotros</a></li>
+        <li class="nav-item-active"><a class="nav-link" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
         <li class="nav-item"><a class="nav-link" href="./agendarcitas.html">Agendar Citas</a></li>
         <li class="nav-item"><a class="nav-link" href="./consultarcitas.html">Consultar Citas</a></li>
       </ul>
@@ -39,11 +40,12 @@
  </div >
  <section class="justify-content-lg-center text-black p-5 mb-5 pt-5 pr-4 mr-4">
    <div class="mx-auto" style="width:600px" >
-     <p class="justify-content-lg-center text-black p-5 mb-5 pt-5 pr-4 mr-4">
-      Somos una empresa destacada en el mercado por la trayectoria y confiabilidad. Estamos seguros de poder prestar el mejor servicio de salud, agendando tus citas médicas de forma fácil y segura. 
+     <p class="justify-text" style="text-align:left" p-5 mb-5 pt-5 pr-4 mr-4">
+      Nuestra misión es cumplirle a nuestros usuarios con un servicio de excelente calidad; Posicionandonos como una empresa destacada en el mercado por trayectoria y confiabilidad. Estamos seguros de poder prestar el mejor servicio de salud, agendando tus citas médicas de forma fácil y segura. 
       Contamos con un equipo capacitado para atender tus necesidades e inquietudes de una mánera oportuna. <br>En Mediser nuestra prioridad es tu salud.
-    <br>
-      Agenda tu cita y permite que nos encargamos del resto.
+    <hr>
+
+   <p class="text-center text-black"> Agenda tu cita y permite que nos encargamos del resto.</p>
       
      </p>
    </div>
@@ -107,7 +109,7 @@
           <h6 class="text-uppercase fw-bold mb-4">
             <i class="fas fa-gem me-3"></i>Mediser
           </h6>
-          <p class="lh-1">
+          <p class="text-center" >
             Nuestro compromiso es con su salud, agende su cita con los mejores especialista de la mánera más fácil con Mediser.
           </p>
         </div>
@@ -165,9 +167,11 @@
 <!-- Footer -->
 </div>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	
+  
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script src="node_modules/popper.js/dist/popper.min.js"></script>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-   
+</div>   
   </body>
 </html>
